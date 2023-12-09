@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 50px; /* Увеличил отступы для большего пространства */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(217, 218, 223);
+}
+
+h1 {
+    margin: 0;
+    text-align: left;
+    margin-left: -8%; /* Убрал отрицательное значение для прижатия к углу */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px; /* Увеличил отступ между пунктами меню */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Убрал отступ у последнего пункта меню */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    margin-right: -6%;
+}
+
+.user-actions input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 6%; /* Увеличил отступ между строкой поиска и входом/регистрацией */
+    width: 700px; /* Увеличиваем ширину поисковой строки */
+}
+
+.user-actions a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+
+
+/* Контейнер списка аниме */
+.anime-list {
+    display: flex; /* Используется flexbox */
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    gap: 20px; /* Расстояние между элементами */
+    justify-content: space-between; /* Распределение пространства между элементами */
+    padding: 20px; /* Внутренние отступы */
+    max-width: 1000px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование списка по горизонтали */
+}
+
+/* Каждый элемент списка аниме */
+.anime-item {
+    width: calc(20% - 20px); /* Ширина каждого элемента (20% ширины экрана) с учетом отступов */
+    margin-bottom: 20px; /* Отступ снизу каждого элемента */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Изображение внутри элемента списка аниме */
+.anime-item img {
+    width: 90%; /* Изображение занимает всю доступную ширину */
+    height: auto; /* Автоматический подбор высоты */
+    border-radius: 0px; /* Скругление углов изображения */
+    cursor: pointer; /* Курсор при наведении на изображение */
+}
+
+/* Заголовок внутри элемента списка аниме */
+.anime-item h3 {
+    margin-top: 10px; /* Отступ сверху у заголовка */
+    font-size: 16px; /* Размер шрифта заголовка */
+}
+
+/* Ссылка (обертка для элемента) */
+.anime-item a {
+    text-decoration: none; /* Убираем стандартное подчеркивание ссылок */
+    color: #333; /* Цвет текста */
+    display: block; /* Ссылка в блочном формате, чтобы охватывать весь элемент */
+}
+
+
+
